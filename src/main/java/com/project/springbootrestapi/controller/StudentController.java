@@ -42,6 +42,8 @@ public class StudentController {
     //Spring Boot REST API with Request Param
     //http://localhost:8080/students/query?id=1
     //http://localhost:8080/students/query?id=1
+    //http://localhost:8080/students/query?id=1
+
     @GetMapping("students/query")
     public Student studentRequestVariable(@RequestParam int id){
        return new Student(id, "Remm","KK");
